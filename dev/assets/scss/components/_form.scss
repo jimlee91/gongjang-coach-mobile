@@ -1,0 +1,138 @@
+form {
+  display: block;
+}
+
+.input {
+  display: block;
+  input {
+    display: block;
+    width: 100%;
+    border: 1px solid #5a5553;
+    height: 32px;
+    padding: 0 10px;
+    font-size: 10px;
+    border-radius: 7px;
+  }
+}
+
+.checkbox2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  input {
+    display: none;
+    &:checked + span {
+      //background: url('../images/i-checkbox-on.png') no-repeat center;
+      //border: none;
+      //background-size: auto 16px;
+      //width: 14px;
+      //height: 16px;
+      &:after {
+        content: "";
+        width: 7px;
+        height: 12px;
+        display: block;
+        position: absolute;
+        left: 2px;
+        bottom: 4px;
+        border: 2px solid $red;
+        transform: rotate(45deg);
+        border-width: 0 2px 2px 0;
+      }
+    }
+  }
+  span {
+    margin: 0 !important;
+    margin-right: 7px !important;
+    width: 12px !important;
+    height: 12px !important;
+    border: 1px solid $base !important;
+    position: relative !important;
+    background: none !important;
+    flex: none !important;
+  }
+}
+.checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 10px;
+  cursor: pointer;
+  input {
+    display: none;
+    &:checked + span {
+      background: $yello;
+    }
+  }
+  span {
+    margin-right: 7px;
+    width: 12px;
+    height: 12px;
+    background: #d7d4d2;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  strong {
+    font-weight: 500;
+  }
+  i {
+    font-style: normal;
+    color: #00f;
+  }
+}
+
+.switch {
+  display: inline-block;
+  cursor: pointer;
+  width: 60px;
+}
+.switch__layout {
+  width: 60px;
+  height: 30px;
+  position: relative;
+  border-radius: 2em;
+  overflow: hidden;
+  border: 1px solid #5a5553;
+}
+.switch input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+.switch input + span:before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  content: "";
+  transition: all 0.2s ease-out;
+}
+.switch input + span:after {
+  position: absolute;
+  left: 34px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  background: #5a5553;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  transition: all 0.2s ease-out;
+}
+.switch input:checked + span:before {
+  background: #fff;
+}
+.switch input:checked + span:after {
+  left: 4px;
+  background: #00f;
+}
+.switch input:disabled + span:before {
+  opacity: 0.3;
+}
