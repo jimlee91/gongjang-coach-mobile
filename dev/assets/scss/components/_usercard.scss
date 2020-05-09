@@ -1,0 +1,32 @@
+.usercard {
+  a {
+    @apply flex;
+  }
+
+  &.small {
+    .img {
+      width: 25px;
+      height: 25px;
+      @apply relative;
+      .new {
+        @apply absolute;
+        left: 0;
+        top: 0;
+        background: $red;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+      }
+      img {
+        border-radius: 50%;
+      }
+    }
+    .info {
+      padding-left: 5px;
+      .name {
+        line-height: 25px;
+        font-size: 10px;
+      }
+    }
+  }
+}

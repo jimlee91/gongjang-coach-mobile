@@ -1,0 +1,64 @@
+.feeds {
+}
+
+.feed {
+  border-bottom: 10px solid rgb(234, 234, 234);
+  padding: 16px;
+  display: block;
+  .feed__header {
+    padding: 0 15px;
+    margin-bottom: 10px;
+  }
+  .feed-title {
+    font-size: 14px;
+    line-height: 20px;
+
+    .hit {
+      color: $red;
+      font-size: 10px;
+      vertical-align: baseline;
+      font-weight: 600;
+    }
+  }
+
+  .feed-etc {
+    @apply flex items-center;
+    span {
+      font-size: 10px;
+      margin-left: 5px;
+      &.view {
+        background: url("../images/i-views.png") no-repeat left center;
+        background-size: auto 10px;
+        padding-left: 15px;
+      }
+      &.like {
+        background: url("../images/i-likes.png") no-repeat left center;
+        background-size: auto 10px;
+        padding-left: 15px;
+      }
+      &.talk {
+        background: url("../images/i-talks.png") no-repeat left center;
+        background-size: auto 10px;
+        padding-left: 15px;
+      }
+    }
+  }
+
+  .feed-info {
+    @apply flex items-center justify-between;
+  }
+
+  .feed__body {
+    .imgs {
+      overflow: auto;
+      @apply flex;
+
+      img {
+        margin-right: 5px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

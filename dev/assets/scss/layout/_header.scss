@@ -11,6 +11,55 @@
   &.header--shadow {
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16);
   }
+
+  .btn {
+    white-space: nowrap;
+    width: 65px;
+    height: 24px;
+    line-height: 20px;
+    border: 1px solid $yello;
+    font-size: 10px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 2em;
+    margin-top: 6px;
+    transition: all 0.3s;
+    &:hover,
+    &:active {
+      background: $yello;
+      color: #fff;
+    }
+  }
+
+  &.header--static {
+    .wrap {
+      height: 70px;
+      @apply relative items-center flex justify-center;
+    }
+    .header__menu {
+      position: absolute;
+      left: 32px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      background: url("../images/hamburger.png") no-repeat left center;
+      @include text-indent;
+    }
+    .header__etc {
+      position: absolute;
+      right: 32px;
+      top: 50%;
+      transform: translateY(-50%);
+      @apply flex items-center;
+      a {
+        width: 20px;
+        height: 20px;
+        @apply flex items-center justify-center;
+        margin-left: 5px;
+      }
+    }
+  }
 }
 
 .header__state {

@@ -15,6 +15,7 @@ gulp
 ## Issue
 
 ## Urls
+- [0. 인트로 – 1](https://boring-pike-e46cc3.netlify.app/0.html)
 - [0-0. 로그인](https://boring-pike-e46cc3.netlify.app/0-0.html)
 - [0-0. 로그인 – 1(모든 버튼 선택시)](https://boring-pike-e46cc3.netlify.app/0-0.html)
 - [0-1. 회원 구분](https://boring-pike-e46cc3.netlify.app/0-1.html)
@@ -34,7 +35,7 @@ gulp
 - [0-9. 비밀번호 찾기](https://boring-pike-e46cc3.netlify.app/0-9.html)
 - [0-10. 비밀번호 찾기 결과](https://boring-pike-e46cc3.netlify.app/0-10.html)
 - [0-11. 비밀번호 찾기 결과 ](https://boring-pike-e46cc3.netlify.app/0-11.html)
-- [0. 인트로 – 1]()
+
 - [1-1. 메인공간 (아카데미 미 등록시)]()
 - [1-2. 메인공간 (슈퍼관리자 로그인시)]()
 - [1. 메인공간 목록]()
@@ -54,6 +55,7 @@ gulp
 - [2. 아카데미 등록 – 9(리스트박스 오픈)]()
 - [3. 마이페이지(2)]()
 - [3. 마이페이지(2) – 1(버튼 선택시)]()
+
 - [4. 관리자 정보]()
 - [5. 1:1문의]()
 - [6-1. 1:1문의 상세(답변 후)]()
@@ -74,6 +76,7 @@ gulp
 - [13. 해당 공간 설정 화면]()
 - [13. 해당 공간 설정 화면 – 2]()
 - [13. 해당 공간 설정 화면– 1]()
+
 - [14. 가운데 버튼]()
 - [14. 가운데 버튼 – 1]()
 - [15. 아카데미 정보]()
