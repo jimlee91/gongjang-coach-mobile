@@ -1,0 +1,179 @@
+@@include('./include/header.html')
+
+<header class="header header--shadow pdt-45 pdb-28">
+  <div class="wrap">
+    <div class="top text-center">
+      <img src="/assets/images/header-logo.png" alt="" />
+    </div>
+    <div class="header__state mgt-10">
+      <span class="state-2-1">가입 마지막 단계</span>
+    </div>
+    <div class="header__title mgt-27">
+      <h2 class="text">
+        <span>아카데미 등록</span>
+      </h2>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <form action="">
+    <div class="form breakborder pdt-30 pdb-40">
+      <div class="wrap">
+        <div class="form__row mgb-15">
+          <label for="" class="form__title">아카데미 명</label>
+          <div class="box">
+            <input type="text" placeholder="최소 6자 이상 ~ 최대 12자 이하" />
+          </div>
+        </div>
+        <div class="form__row mgb-15">
+          <label for="" class="form__title">지점</label>
+          <div class="box">
+            <input type="text" readonly value="동대문점" />
+          </div>
+        </div>
+
+        <div class="form__row mgb-15">
+          <label for="" class="form__title">아카데미 포스터</label>
+          <div class="box">
+            <label for="poster" class="file">
+              <input type="file" hidden id="poster" accept="image/*" />
+              <span>사진을 선택하세요.</span>
+            </label>
+          </div>
+        </div>
+        <div class="form__row mgb-15">
+          <label for="" class="form__title">아카데미 로고</label>
+          <div class="box">
+            <label for="logo" class="file">
+              <input type="file" hidden id="logo" accept="image/*" />
+              <span>사진을 선택하세요.</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form pdt-30 pdb-40">
+      <div class="wrap">
+        <h2 class="form__title">수업등록</h2>
+        <div class="group mgt-25">
+          <div class="group__row mgb-10">
+            <div class="group__label">
+              <label for="" class="label">수업 명</label>
+            </div>
+            <div class="group__content">
+              <div class="box">
+                <input type="text" placeholder="수업 명을 입력하세요. " />
+              </div>
+            </div>
+          </div>
+          <div class="group__row mgb-10">
+            <div class="group__label">
+              <label for="" class="label">모집 대상</label>
+            </div>
+            <div class="group__content">
+              <div class="box">
+                <input type="text" placeholder="모집 대상을 입력하세요. " />
+              </div>
+            </div>
+          </div>
+          <div class="group__row mgb-10">
+            <div class="group__label">
+              <label for="" class="label">모집 인원</label>
+            </div>
+            <div class="group__content">
+              <div class="box relative">
+                <input type="text" placeholder="모집 인원을 입력하세요. " />
+                <span class="unit lineheight-30 font-10 absolute right-0 top-0">명</span>
+              </div>
+            </div>
+          </div>
+          <div class="group__row mgb-10">
+            <div class="group__label">
+              <label for="" class="label">수업료</label>
+            </div>
+            <div class="group__content">
+              <div class="box">
+                <input type="text" placeholder="수업료를 입력하세요. " />
+
+                <select name="" id="" class="mgl-10" style="width: 70px; flex: none;">
+                  <option value="">기간</option>
+                </select>
+              </div>
+              <p class="color-red font-10 mgt-5">* 기입된 수업료가 해당되는 기간을 선택하세요.</p>
+            </div>
+          </div>
+          <div class="group__row mgb-10">
+            <div class="group__label">
+              <label for="" class="label">수업 설명</label>
+            </div>
+            <div class="group__content">
+              <div class="box">
+                <textarea name="" id="" placeholder="수업 설명을 입력하세요."></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="group__row mgb-10">
+            <div class="group__label">
+              <label for="" class="label">요일</label>
+            </div>
+            <div class="group__content">
+              <div class="box">
+                <div class="time flex">
+                  <select name="" id="" class="month">
+                    <option value="">월</option>
+                  </select>
+                  <input type="time" class="border bg-white" />
+                  <span class="lineheight-30 font-10 mx-1 flex-none">~</span>
+                  <input type="time" class="border bg-white" />
+                </div>
+              </div>
+              <div class="box mgt-7">
+                <input type="text" class="border" />
+                <a href="" class="btn mgl-10">추가</a>
+              </div>
+            </div>
+          </div>
+          <div class="group__row mgb-10">
+            <div class="group__label">
+              <label for="" class="label">코치</label>
+            </div>
+            <div class="group__content">
+              <div class="box">
+                <select name="" id="">
+                  <option value="">코치</option>
+                </select>
+              </div>
+              <div class="box mgt-7">
+                <input type="text" class="border" />
+                <a href="" class="btn mgl-10">추가</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reginfo mgt-30 mgb-30">
+        <div class="wrap flex items-center">
+          <a href="" class="btn btn--default">등록하기</a>
+          <div class="reginfo-text">
+            * 하단 수업 목록에서 원하는 항목의 수정 버튼을 클릭 시 상단 수업등록에서 수정 가능합니다.
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <h2 class="form__title">수업목록</h2>
+
+        <p class="empty">수업 목록이 없습니다.</p>
+      </div>
+
+      <div class="btnbox mgt-60">
+        <a href="" class="submit-btn">다음</a>
+      </div>
+    </div>
+  </form>
+</div>
+
+@@include('./include/footer.html')

@@ -18,6 +18,12 @@
     border-radius: 50%;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
     outline-width: 0;
+
+    &:hover,
+    &.active {
+      background: url("../images/global-logo.png") $red no-repeat center;
+      background-size: auto 18px;
+    }
   }
   .global__pagination {
     @apply flex;

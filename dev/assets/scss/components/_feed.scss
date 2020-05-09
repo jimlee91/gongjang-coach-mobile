@@ -5,6 +5,9 @@
   border-bottom: 10px solid rgb(234, 234, 234);
   padding: 16px;
   display: block;
+  &:last-child {
+    border-bottom: none;
+  }
   .feed__header {
     padding: 0 15px;
     margin-bottom: 10px;
@@ -54,6 +57,7 @@
       @apply flex;
 
       img {
+        max-height: 150px;
         margin-right: 5px;
         &:last-child {
           margin-right: 0;

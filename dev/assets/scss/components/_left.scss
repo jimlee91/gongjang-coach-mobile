@@ -1,0 +1,71 @@
+.left-nav {
+  display: none;
+  @apply fixed left-0 top-0 w-full h-full;
+  z-index: 5000;
+
+  .left-nav__bg {
+    @apply absolute left-0 top-0 w-full h-full;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .left-nav__content {
+    width: 290px;
+    @apply absolute left-0 top-0 h-full bg-white overflow-auto;
+    z-index: 20;
+    border-right: 8px solid $yello;
+    padding-bottom: 70px;
+  }
+  .top {
+    padding: 45px 36px;
+    border-bottom: 10px solid #eaeaea;
+  }
+  .top-info {
+    margin-top: 35px;
+    .thumb {
+      width: 55px;
+      height: 55px;
+      @apply rounded-full overflow-hidden;
+
+      img {
+        @apply w-full h-full object-cover;
+      }
+    }
+  }
+
+  .nav {
+    padding-left: 36px;
+
+    a {
+      display: block;
+      line-height: 55px;
+      font-size: 12px;
+      background: url("../images/nav-arrow.png") no-repeat calc(100% - 20px);
+      border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+      &.active,
+      &:hover {
+        background: url("../images/nav-arrow-active.png") no-repeat calc(100% - 20px);
+      }
+    }
+  }
+
+  .etc {
+    border-top: 10px solid #eaeaea;
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+
+    a {
+      flex: 1;
+      line-height: 60px;
+      font-size: 10px;
+      text-align: center;
+      &.active,
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}

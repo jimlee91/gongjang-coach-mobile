@@ -1,0 +1,116 @@
+@@include('./include/header.html')
+
+<header class="header pdt-45 pdb-28">
+  <div class="wrap">
+    <div class="top text-center">
+      <img src="/assets/images/header-logo.png" alt="" />
+    </div>
+    <div class="header__title mgt-54">
+      <h2 class="text">
+        <span>관리자 정보</span>
+      </h2>
+    </div>
+  </div>
+</header>
+
+<div class="container registered pdb-100 pgt-25">
+  <div class="wrap">
+    <form action="">
+      <div class="form">
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">ID</label>
+          <div class="box">
+            <input type="text" value="hongildong23" readonly />
+          </div>
+        </div>
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">비밀번호</label>
+          <div class="box">
+            <input type="password" value="hongildong23" />
+          </div>
+        </div>
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">비밀번호 확인</label>
+          <div class="box">
+            <input type="password" value="hongildong23" />
+          </div>
+        </div>
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">이름</label>
+          <div class="box">
+            <input type="text" value="김공장" readonly />
+          </div>
+        </div>
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">성별</label>
+          <div class="box mgt-15">
+            <label for="m" class="checkbox mgr-15">
+              <input type="radio" name="gender" id="m" hidden checked />
+              <span></span> 남자
+            </label>
+          </div>
+        </div>
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">생년월일</label>
+          <div class="box">
+            <input type="text" value="970503" readonly />
+          </div>
+        </div>
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">이메일</label>
+          <div class="box">
+            <input type="email" value="hongildong23@gmail.com" />
+          </div>
+        </div>
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">휴대폰 번호</label>
+          <div class="box">
+            <input type="text" placeholder="" value="01023448888" />
+            <a href="" class="btn mgl-10">인증 확인</a>
+          </div>
+        </div>
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">지점</label>
+          <div class="box">
+            <input type="text" placeholder="6자리 입력" value="동대문점" readonly />
+          </div>
+        </div>
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">코치이력</label>
+          <div class="box">
+            <input type="text" class="border" />
+            <a href="" class="btn mgt-5 mgl-10">추가</a>
+          </div>
+          <div class="box mgt-5">
+            <ul class="listitem">
+              <li>
+                <p>
+                  김공장 코치
+                </p>
+                <button class="listitem-remove">-</button>
+              </li>
+              <li>
+                <p>
+                  김공장장 코치
+                </p>
+                <button class="listitem-remove">-</button>
+              </li>
+              <li>
+                <p>
+                  홍길동 코치
+                </p>
+                <button class="listitem-remove">-</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="btnbox mgt-55">
+        <a href="" class="submit-btn">수정완료</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+@@include('./include/footer.html')

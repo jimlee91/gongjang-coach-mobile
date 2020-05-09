@@ -42,6 +42,7 @@ select,
 input {
   appearance: none !important;
   outline-width: 0 !important;
+  box-sizing: border-box;
 }
 select::-ms-expand {
   display: none;
@@ -118,4 +119,16 @@ select::-ms-expand {
 }
 .color-red {
   color: $red !important;
+}
+
+.breakborder {
+  border-bottom: 10px solid rgb(234, 234, 234);
+}
+
+.empty {
+  color: #414141;
+  font-size: 12px;
+  text-align: center;
+  line-height: 120px;
+  opacity: 0.8;
 }

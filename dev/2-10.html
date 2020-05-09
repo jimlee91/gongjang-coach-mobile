@@ -1,0 +1,305 @@
+@@include('./include/header.html')
+
+<header class="header header--shadow pdt-45 pdb-28">
+  <div class="wrap">
+    <div class="top text-center">
+      <img src="/assets/images/header-logo.png" alt="" />
+    </div>
+    <div class="header__state mgt-10">
+      <span class="state-2-1">가입 마지막 단계</span>
+    </div>
+    <div class="header__title mgt-27">
+      <h2 class="text">
+        <span>아카데미 등록</span>
+      </h2>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <form action="">
+    <div class="form breakborder pdt-30 pdb-40">
+      <div class="wrap">
+        <div class="form__row mgb-15">
+          <label for="" class="form__title">아카데미 명</label>
+          <div class="box">
+            <input type="text" placeholder="최소 6자 이상 ~ 최대 12자 이하" />
+          </div>
+        </div>
+        <div class="form__row mgb-15">
+          <label for="" class="form__title">지점</label>
+          <div class="box">
+            <input type="text" readonly value="동대문점" onclick="showModal('#selectSpot')" />
+          </div>
+        </div>
+
+        <div class="form__row mgb-15">
+          <label for="" class="form__title">아카데미 포스터</label>
+          <div class="box">
+            <label for="poster" class="file">
+              <input type="file" hidden id="poster" accept="image/*" />
+              <span>사진을 선택하세요.</span>
+            </label>
+          </div>
+        </div>
+        <div class="form__row mgb-15">
+          <label for="" class="form__title">아카데미 로고</label>
+          <div class="box">
+            <label for="logo" class="file">
+              <input type="file" hidden id="logo" accept="image/*" />
+              <span>사진을 선택하세요.</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form pdt-30 pdb-40">
+      <div class="wrap">
+        <h2 class="form__title">수업등록</h2>
+        <div class="group mgt-25">
+          <div class="group__row mgb-10">
+            <div class="group__label">
+              <label for="" class="label">수업 명</label>
+            </div>
+            <div class="group__content">
+              <div class="box">
+                <input type="text" placeholder="수업 명을 입력하세요. " />
+              </div>
+            </div>
+          </div>
+          <div class="group__row mgb-10">
+            <div class="group__label">
+              <label for="" class="label">모집 대상</label>
+            </div>
+            <div class="group__content">
+              <div class="box">
+                <input type="text" placeholder="모집 대상을 입력하세요. " />
+              </div>
+            </div>
+          </div>
+          <div class="group__row mgb-10">
+            <div class="group__label">
+              <label for="" class="label">모집 인원</label>
+            </div>
+            <div class="group__content">
+              <div class="box relative">
+                <input type="text" placeholder="모집 인원을 입력하세요. " />
+                <span class="unit lineheight-30 font-10 absolute right-0 top-0">명</span>
+              </div>
+            </div>
+          </div>
+          <div class="group__row mgb-10">
+            <div class="group__label">
+              <label for="" class="label">수업료</label>
+            </div>
+            <div class="group__content">
+              <div class="box">
+                <input type="text" placeholder="수업료를 입력하세요. " />
+
+                <select name="" id="" class="mgl-10" style="width: 70px; flex: none;">
+                  <option value="">월간</option>
+                  <option value="">주간</option>
+                </select>
+              </div>
+              <p class="color-red font-10 mgt-5">* 기입된 수업료가 해당되는 기간을 선택하세요.</p>
+            </div>
+          </div>
+          <div class="group__row mgb-10">
+            <div class="group__label">
+              <label for="" class="label">수업 설명</label>
+            </div>
+            <div class="group__content">
+              <div class="box">
+                <textarea name="" id="" placeholder="수업 설명을 입력하세요."></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="group__row mgb-10">
+            <div class="group__label">
+              <label for="" class="label">요일</label>
+            </div>
+            <div class="group__content">
+              <div class="box">
+                <div class="time flex">
+                  <select name="" id="" class="month">
+                    <option value="">월</option>
+                    <option value="">화</option>
+                    <option value="">수</option>
+                    <option value="">목</option>
+                    <option value="">금</option>
+                    <option value="">토</option>
+                    <option value="">일</option>
+                  </select>
+                  <input type="time" class="border bg-white" />
+                  <span class="lineheight-30 font-10 mx-1 flex-none">~</span>
+                  <input type="time" class="border bg-white" />
+                </div>
+              </div>
+              <div class="box mgt-7">
+                <ul class="listitem">
+                  <li>
+                    <p>
+                      월 AM 12:00 ~ AM 13:00
+                    </p>
+                    <button class="listitem-remove">-</button>
+                  </li>
+                  <li>
+                    <p>
+                      월 AM 12:00 ~ AM 13:00
+                    </p>
+                    <button class="listitem-remove">-</button>
+                  </li>
+                  <li>
+                    <p>
+                      월 AM 12:00 ~ AM 13:00
+                    </p>
+                    <button class="listitem-remove">-</button>
+                  </li>
+                </ul>
+                <a href="" class="btn btn-red mgl-10">추가</a>
+              </div>
+            </div>
+          </div>
+          <div class="group__row mgb-10">
+            <div class="group__label">
+              <label for="" class="label">코치</label>
+            </div>
+            <div class="group__content">
+              <div class="box">
+                <select name="" id="">
+                  <option value="">코치</option>
+                </select>
+              </div>
+              <div class="box mgt-7">
+                <ul class="listitem">
+                  <li>
+                    <p>
+                      김공장 코치
+                    </p>
+                    <button class="listitem-remove">-</button>
+                  </li>
+                  <li>
+                    <p>
+                      김공장장 코치
+                    </p>
+                    <button class="listitem-remove">-</button>
+                  </li>
+                  <li>
+                    <p>
+                      홍길동 코치
+                    </p>
+                    <button class="listitem-remove">-</button>
+                  </li>
+                </ul>
+                <a href="" class="btn btn-red mgl-10">추가</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reginfo mgt-30 mgb-30">
+        <div class="wrap flex items-center">
+          <a href="" class="btn btn--default">등록하기</a>
+          <div class="reginfo-text">
+            * 하단 수업 목록에서 원하는 항목의 수정 버튼을 클릭 시 상단 수업등록에서 수정 가능합니다.
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <h2 class="form__title">수업목록</h2>
+
+        <div class="tbl border-none mgt-15">
+          <table>
+            <colgroup>
+              <col width="30" />
+              <col />
+              <col />
+              <col />
+              <col width="95" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>1.</td>
+                <td>FC 정왕</td>
+                <td>14세 미만</td>
+                <td>160,000 (월)</td>
+                <td>
+                  <div class="btnbox">
+                    <a href="" class="btn btn-red">수정</a>
+                    <a href="" class="btn btn-black mgl-5">삭제</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>1.</td>
+                <td>FC 정왕</td>
+                <td>14세 미만</td>
+                <td>160,000 (월)</td>
+                <td>
+                  <div class="btnbox">
+                    <a href="" class="btn btn-red">수정</a>
+                    <a href="" class="btn btn-black mgl-5">삭제</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>1.</td>
+                <td>FC 정왕</td>
+                <td>14세 미만</td>
+                <td>160,000 (월)</td>
+                <td>
+                  <div class="btnbox">
+                    <a href="" class="btn btn-red">수정</a>
+                    <a href="" class="btn btn-black mgl-5">삭제</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="btnbox mgt-60">
+        <a href="" class="submit-btn">다음</a>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="modal" id="selectSpot" style="display: none;">
+  <div class="modal__content modal__content--selectSpot">
+    <h2 class="modal__title">지점 선택</h2>
+    <div class="selectSpot__content">
+      <div class="selectSpot__tab">
+        <button data-tab="1" class="active">서울, 경기 지역</button>
+        <button data-tab="2">광주, 전라 지역</button>
+        <button data-tab="3">대전, 충청 지역</button>
+        <button data-tab="4">부산, 경상 지역</button>
+        <button data-tab="5">제주 지역</button>
+      </div>
+      <div class="selectSpot__views">
+        <div class="view view1">
+          <div class="spotlist">
+            <button class="active">동대문점</button>
+            <button>서수원점</button>
+            <button>안산 고잔점</button>
+            <button>일산점</button>
+          </div>
+        </div>
+        <div class="view view2" style="display: none;"></div>
+        <div class="view view3" style="display: none;"></div>
+        <div class="view view4" style="display: none;"></div>
+        <div class="view view5" style="display: none;"></div>
+      </div>
+    </div>
+
+    <div class="btnbox pdt-25 pdb-25">
+        <a href="" class="submit-btn">선택하기</a>
+    </div>
+  </div>
+</div>
+
+@@include('./include/footer.html')

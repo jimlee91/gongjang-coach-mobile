@@ -1,8 +1,11 @@
 .tbl {
+  border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+  &.border-none {
+    border: none;
+  }
   table {
     width: 100%;
     table-layout: fixed;
-    border-bottom: 1px solid rgba(100, 100, 100, 0.5);
   }
   th {
     font-size: 10px;
@@ -15,6 +18,35 @@
     text-align: center;
     &.text-left {
       @apply text-left;
+    }
+  }
+
+  .btnbox {
+    display: flex;
+    width: 100%;
+  }
+  .btn {
+    width: 50px;
+    height: 24px;
+    line-height: 22px;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 2em;
+    transition: all 0.3s;
+    &.btn-red {
+      color: $red;
+      border: 1px solid $red;
+      &:hover {
+        background: $red;
+        color: #fff;
+      }
+    }
+    &.btn-black {
+      border: 1px solid #5a5553;
+      &:hover {
+        background: #5a5553;
+        color: #fff;
+      }
     }
   }
 }
