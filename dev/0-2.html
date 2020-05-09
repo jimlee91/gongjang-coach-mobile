@@ -1,0 +1,111 @@
+@@include('./include/header.html')
+
+<header class="header header--shadow pdt-45 pdb-28">
+  <div class="wrap">
+    <div class="top text-center">
+      <img src="/assets/images/header-logo.png" alt="" />
+    </div>
+    <div class="header__state mgt-10">
+      <span class="state-2-1">가입 마지막 단계</span>
+    </div>
+    <div class="header__title mgt-27">
+      <h2 class="text">
+        <span>회원가입</span>
+      </h2>
+    </div>
+  </div>
+</header>
+
+<div class="container registered pdt-30 pdb-40">
+  <div class="wrap">
+    <form action="">
+      <div class="form">
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">아이디</label>
+          <div class="box">
+            <input type="text" placeholder="최소 6자 이상 ~ 최대 12자 이하" />
+            <a href="" class="btn mgl-10">중복확인</a>
+          </div>
+        </div>
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">비밀번호</label>
+          <div class="box">
+            <input type="password" placeholder="영문자+숫자+특수문자 조합 8자 이상~16자 이하" />
+          </div>
+        </div>
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">비밀번호 확인</label>
+          <div class="box">
+            <input type="password" placeholder="비밀번호 확인" />
+          </div>
+        </div>
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">이름</label>
+          <div class="box">
+            <input type="text" placeholder="실명을 입력하세요." />
+          </div>
+        </div>
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">성별</label>
+          <div class="box mgt-15">
+            <label for="m" class="checkbox mgr-15">
+              <input type="radio" name="gender" id="m" hidden />
+              <span></span> 남자
+            </label>
+            <label for="f" class="checkbox">
+              <input type="radio" name="gender" id="f" hidden />
+              <span></span> 여자
+            </label>
+          </div>
+        </div>
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">생년월일</label>
+          <div class="box">
+            <input type="text" placeholder="8자리 입력" />
+          </div>
+        </div>
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">이메일</label>
+          <div class="box">
+            <input type="text" placeholder="이메일 입력" />
+          </div>
+        </div>
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">휴대폰 번호</label>
+          <div class="box">
+            <input type="text" placeholder="'- 구분없이 입력'" />
+            <a href="" class="btn mgl-10">인증 확인</a>
+          </div>
+        </div>
+
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">지점</label>
+          <div class="box">
+            <select name="" id="">
+              <option value="">지점 선택</option>
+              <option value="">지점 1</option>
+              <option value="">지점 2</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">아카데미</label>
+          <div class="box">
+            <select name="" id="">
+              <option value="">아카데미 선택</option>
+              <option value="">아카데미1</option>
+              <option value="">아카데미2</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="btnbox mgt-60">
+        <a href="" class="submit-btn">완료</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+@@include('./include/footer.html')

@@ -37,6 +37,16 @@ label {
   display: none !important;
 }
 
+textarea,
+select,
+input {
+  appearance: none !important;
+  outline-width: 0 !important;
+}
+select::-ms-expand {
+  display: none;
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -103,7 +113,9 @@ label {
   font-weight: 900;
 }
 
-input {
-  appearance: none;
-  outline-width: 0;
+.color-yellow {
+  color: $yello !important;
+}
+.color-red {
+  color: $red !important;
 }

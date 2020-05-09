@@ -1,5 +1,13 @@
 .btnbox {
   @apply flex items-center justify-center;
+  &.fixed {
+    @apply fixed w-full;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 40px;
+    background: #fff;
+    padding-top: 20px;
+  }
 }
 
 .submit-btn {
@@ -7,12 +15,29 @@
   height: 36px;
   line-height: 36px;
   border-radius: 2em;
-  color:#fff;
+  color: #fff;
   font-size: 12px;
   @apply text-center;
-  background:#ffb100;
-  transition: all .3s;
+  background: #ffb100;
+  transition: all 0.3s;
   &:hover {
-      background:#ff3b00;
+    background: #ff3b00;
+  }
+}
+
+.white-btn {
+  width: 185px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 2em;
+  color: #5a5553;
+  font-size: 12px;
+  @apply text-center;
+  background: #fff;
+  border: 1px solid $yello;
+  transition: all 0.3s;
+  &:hover {
+    background: $yello;
+    color: #fff;
   }
 }

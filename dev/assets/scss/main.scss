@@ -1,11 +1,12 @@
-@import "base/reset";
-
 @import "helper/variable";
 @import "helper/mixin";
+
+@import "base/reset";
 
 @import "components/btn";
 @import "components/form";
 @import "components/modal";
+@import "components/global";
 
 @import "layout/container";
 @import "layout/header";

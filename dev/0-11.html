@@ -1,0 +1,42 @@
+@@include('./include/header.html')
+
+<header class="header pdt-45 pdb-28">
+  <div class="wrap">
+    <div class="top text-center">
+      <img src="/assets/images/header-logo.png" alt="" />
+    </div>
+    <div class="header__title justify-center mgt-120">
+      <h2 class="text">
+        <span>새 비밀번호 설정</span>
+      </h2>
+    </div>
+    <p class="font-10 text-center mgt-10 opacity-75">새로운 비밀번호를 설정해주세요.</p>
+  </div>
+</header>
+
+<div class="container registered pdb-100">
+  <div class="wrap">
+    <form action="">
+      <div class="form form--border mgt-20">
+        <div class="form__row mgb-20">
+          <label for="" class="form__title">새 비밀번호</label>
+          <div class="box">
+            <input type="password" placeholder="영문자+숫자+특수문자 조합 8자 이상~16자 이하" value="123123"/>
+          </div>
+        </div>
+        <div class="form__row">
+          <label for="" class="form__title">새 비밀번호 확인</label>
+          <div class="box">
+            <input type="password" placeholder="비밀번호 확인" class="is_confirm" value="123123"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="btnbox mgt-65">
+        <a href="" class="submit-btn">완료</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+@@include('./include/footer.html')

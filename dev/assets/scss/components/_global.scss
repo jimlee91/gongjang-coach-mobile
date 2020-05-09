@@ -1,0 +1,38 @@
+.global {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2000;
+
+  .global__button {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 35px;
+    z-index: 1000;
+    background: url("../images/global-logo.png") $yello no-repeat center;
+    background-size: auto 18px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+    outline-width: 0;
+  }
+  .global__pagination {
+    @apply flex;
+    background: #fff;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+    a {
+      height: 65px;
+      flex: 1;
+      background: url("../images/pagi-arrow.png") no-repeat center;
+      background-size: auto 18px;
+      &.prev {
+        transform: rotate(180deg);
+      }
+      &.next {
+      }
+    }
+  }
+}
