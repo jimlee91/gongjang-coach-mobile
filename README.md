@@ -36,27 +36,34 @@ gulp
 - [0-10. 비밀번호 찾기 결과](https://boring-pike-e46cc3.netlify.app/0-10.html)
 - [0-11. 비밀번호 찾기 결과 ](https://boring-pike-e46cc3.netlify.app/0-11.html)
 
-- [1-1. 메인공간 (아카데미 미 등록시)]()
-- [1-2. 메인공간 (슈퍼관리자 로그인시)]()
-- [1. 메인공간 목록]()
-- [1. 메인공간 목록 – 1(버튼 클릭시)]()
-- [2-1. 아카데미 등록 (다음단계)]()
-- [2-1. 아카데미 등록 (다음단계) – 1(모든 항목 완료)]()
-- [2. 아카데미 등록 ]()
-- [2. 아카데미 등록 - 10 (모든 항목 완료)]()
-- [2. 아카데미 등록 – 1(지점선택)]()
-- [2. 아카데미 등록 – 2(지점선택) ]()
-- [2. 아카데미 등록 – 3(지점선택)]()
-- [2. 아카데미 등록 – 4(지점선택)]()
-- [2. 아카데미 등록 – 5(지점선택)]()
-- [2. 아카데미 등록 – 6(지점선택) ]()
-- [2. 아카데미 등록 – 7(포스터선택) ]()
-- [2. 아카데미 등록 – 8(포스터선택)]()
-- [2. 아카데미 등록 – 9(리스트박스 오픈)]()
-- [3. 마이페이지(2)]()
-- [3. 마이페이지(2) – 1(버튼 선택시)]()
+- [1-1. 메인공간 (아카데미 미 등록시)](https://boring-pike-e46cc3.netlify.app/1-1.html)
+- [1-2. 메인공간 (슈퍼관리자 로그인시)](https://boring-pike-e46cc3.netlify.app/1-2.html)
+- [1. 메인공간 목록](https://boring-pike-e46cc3.netlify.app/1.html)
+- [1. 메인공간 목록 – 1(버튼 클릭시)](https://boring-pike-e46cc3.netlify.app/1.html)
+- [2-1. 아카데미 등록 (다음단계)](https://boring-pike-e46cc3.netlify.app/2-1.html)
+- [2-1. 아카데미 등록 (다음단계) – 1(모든 항목 완료)](https://boring-pike-e46cc3.netlify.app/2-1.html)
+- [2. 아카데미 등록 ](https://boring-pike-e46cc3.netlify.app/2.html)
+- [2. 아카데미 등록 - 10 (모든 항목 완료)](https://boring-pike-e46cc3.netlify.app/2-10.html)
+- [2. 아카데미 등록 – 1(지점선택)](https://boring-pike-e46cc3.netlify.app/2-2.html)
+- [2. 아카데미 등록 – 2(지점선택) ](https://boring-pike-e46cc3.netlify.app/2-2.html)
+- [2. 아카데미 등록 – 3(지점선택)](https://boring-pike-e46cc3.netlify.app/2-2.html)
+- [2. 아카데미 등록 – 4(지점선택)](https://boring-pike-e46cc3.netlify.app/2-2.html)
+- [2. 아카데미 등록 – 5(지점선택)](https://boring-pike-e46cc3.netlify.app/2-2.html)
+- [2. 아카데미 등록 – 6(지점선택) ](https://boring-pike-e46cc3.netlify.app/2-2.html)
+    - 지점 전체 공통
+- ~~[2. 아카데미 등록 – 7(포스터선택) ]()~~
+- ~~[2. 아카데미 등록 – 8(포스터선택)]()~~
+    - 아카데미 등록시 포스터와 로고는 이미지만 등록가능한데 비디오 추가 화면이 필요할까요??
+    - 파일 추가 화면 바로 나오도록 처리됐습니다.
+- [2. 아카데미 등록 – 9(리스트박스 오픈)](https://boring-pike-e46cc3.netlify.app/2-2.html)
+- [3. 마이페이지(2)](https://boring-pike-e46cc3.netlify.app/1.html)
+- [3. 마이페이지(2) – 1(버튼 선택시)](https://boring-pike-e46cc3.netlify.app/1.html)
+    - 좌측 상단 햄버거 메뉴 클릭
 
-- [4. 관리자 정보]()
+- [4. 관리자 정보](https://boring-pike-e46cc3.netlify.app/4.html)
+
+-------------------------
+
 - [5. 1:1문의]()
 - [6-1. 1:1문의 상세(답변 후)]()
 - [6. 1:1문의 상세(답변 전)]()
