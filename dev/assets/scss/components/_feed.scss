@@ -2,6 +2,143 @@
 }
 
 .feed {
+  .feed__slide-img {
+    img {
+      width: 100%;
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 10px;
+    z-index: 5;
+    li {
+      margin: 0 3px;
+    }
+    button {
+      @include text-indent;
+      border: 1px solid $base;
+      width: 10px;
+      height: 10px;
+      background: #efefef;
+      border-radius: 50%;
+      transition: all 0.3s;
+    }
+    .slick-active button {
+      background: $yello;
+    }
+  }
+
+  .feedDetail & {
+    // 상세 피드 디자인
+
+    padding: 0;
+    .feed__content {
+      background: #d9d9d9;
+    }
+    .feed__util {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background: #383433;
+      padding: 15px 36px;
+
+      .detail__info {
+        text-align: right;
+        p {
+          font-size: 10px;
+          color: #fff;
+          margin-top: 5px;
+          font-weight: 300;
+        }
+        span {
+          font-size: 10px;
+        }
+      }
+      .feed__views {
+        background: url("../images/i-views-white.png") no-repeat left center;
+        background-size: auto 10px;
+        color: #fff;
+        padding-left: 16px;
+      }
+      .feed__likes {
+        background: url("../images/i-likes-white.png") no-repeat left center;
+        background-size: auto 11px;
+        color: #fff;
+        padding-left: 18px;
+        margin-left: 2px;
+      }
+      .feed__talks {
+        background: url("../images/i-talks-white.png") no-repeat left center;
+        background-size: auto 11px;
+        color: #fff;
+        padding-left: 16px;
+        margin-left: 2px;
+      }
+
+      .feed__actions {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .feed__action-btn {
+        // 좌측 버튼 고통
+        text-align: center;
+        font-size: 10px;
+        color: #fff;
+        padding-top: 25px;
+        margin-right: 20px;
+        &:last-child {
+          margin-right: 0;
+        }
+        &.active {
+          color: $yello;
+        }
+        &.feed__action-like {
+          background: url("../images/detail-like.png") no-repeat center top;
+          background-size: auto 18px;
+          &.active {
+            background: url("../images/detail-like-active.png") no-repeat center top;
+            background-size: auto 18px;
+          }
+        }
+        &.feed__action-unlike {
+          background: url("../images/detail-unlike.png") no-repeat center top;
+          background-size: auto 20px;
+          &.active {
+            background: url("../images/detail-unlike-active.png") no-repeat center top;
+            background-size: auto 18px;
+          }
+        }
+        &.feed__action-share {
+          background: url("../images/detail-share.png") no-repeat center top;
+          background-size: auto 18px;
+          &:hover {
+            background: url("../images/detail-share-active.png") no-repeat center top;
+            background-size: auto 18px;
+            color: $yello;
+          }
+        }
+        &.feed__action-report {
+          background: url("../images/detail-report.png") no-repeat center top;
+          background-size: auto 20px;
+          &:hover {
+            background: url("../images/detail-report-active.png") no-repeat center top;
+            background-size: auto 18px;
+            color: $yello;
+          }
+        }
+      }
+    }
+  }
+
   border-bottom: 10px solid rgb(234, 234, 234);
   padding: 16px;
   display: block;

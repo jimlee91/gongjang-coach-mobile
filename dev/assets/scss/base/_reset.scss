@@ -51,7 +51,7 @@ select::-ms-expand {
 @tailwind components;
 @tailwind utilities;
 
-@for $i from 1 to 200 {
+@for $i from 0 to 200 {
   .mgb-#{$i} {
     margin-bottom: #{$i}px !important;
   }

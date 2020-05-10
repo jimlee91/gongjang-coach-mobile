@@ -1,0 +1,58 @@
+@@include('./include/header.html')
+
+<style>
+  body {
+    background: #414141;
+  }
+</style>
+
+<header class="header pdt-45 pdb-28">
+  <div class="wrap">
+    <div class="top text-center">
+      <img src="/assets/images/header-logo.png" alt="" />
+    </div>
+    <div class="header__title justify-between mgt-54">
+      <h2 class="text">
+        <span>1:1 문의</span>
+      </h2>
+      <a href="" class="btn">수정완료</a>
+    </div>
+  </div>
+</header>
+
+<div class="container registered pdt-20 right-bordered">
+  <div class="wrap">
+    <form action="">
+      <div class="form">
+        <div class="form__row mgb-15">
+          <label for="" class="form__title">제목</label>
+          <div class="box">
+            <input type="text" placeholder="" value="잔디 AS 요청합니다." />
+          </div>
+        </div>
+        <div class="form__row mgb-15">
+          <label for="" class="form__title">내용</label>
+          <div class="box">
+            <textarea name="" id=""></textarea>
+          </div>
+        </div>
+        <div class="form__row mgb-15 relative">
+          <label for="" class="form__title">업로드</label>
+          <div class="box">
+            <label for="poster" class="btn btn-red absolute right-0" style="top: -5px; width: 40px; margin-top: 0;">추가</label>
+            <label for="poster" class="file muliple">
+              <input type="file" hidden id="poster" muliple accept="image/*" />
+              <ul class="lists"></ul>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="board-info font-10 mgt-30">
+        <span class="date">20.02.30</span>
+        <strong>답변 완료</strong>
+      </div>
+    </form>
+  </div>
+</div>
+
+@@include('./include/comment.html') @@include('./include/global.html') @@include('./include/footer.html')

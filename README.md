@@ -1,6 +1,7 @@
 # 공장 코치 모바일
 
 ## INSTALL & RUN
+
 ```bash
 # 1 install
 npm i
@@ -10,11 +11,13 @@ gulp
 ```
 
 ## Design
+
 [https://app.zeplin.io/project/5e7848135ae5cd6d7ab959df](https://app.zeplin.io/project/5ea2a69b41b00851c13118c9)
 
 ## Issue
 
 ## Urls
+
 - [0. 인트로 – 1](https://boring-pike-e46cc3.netlify.app/0.html)
 - [0-0. 로그인](https://boring-pike-e46cc3.netlify.app/0-0.html)
 - [0-0. 로그인 – 1(모든 버튼 선택시)](https://boring-pike-e46cc3.netlify.app/0-0.html)
@@ -50,26 +53,27 @@ gulp
 - [2. 아카데미 등록 – 4(지점선택)](https://boring-pike-e46cc3.netlify.app/2-2.html)
 - [2. 아카데미 등록 – 5(지점선택)](https://boring-pike-e46cc3.netlify.app/2-2.html)
 - [2. 아카데미 등록 – 6(지점선택) ](https://boring-pike-e46cc3.netlify.app/2-2.html)
-    - 지점 전체 공통
+  - 지점 전체 공통
 - ~~[2. 아카데미 등록 – 7(포스터선택) ]()~~
 - ~~[2. 아카데미 등록 – 8(포스터선택)]()~~
-    - 아카데미 등록시 포스터와 로고는 이미지만 등록가능한데 비디오 추가 화면이 필요할까요??
-    - 파일 추가 화면 바로 나오도록 처리됐습니다.
+  - 아카데미 등록시 포스터와 로고는 이미지만 등록가능한데 비디오 추가 화면이 필요할까요??
+  - 파일 추가 화면 바로 나오도록 처리됐습니다.
 - [2. 아카데미 등록 – 9(리스트박스 오픈)](https://boring-pike-e46cc3.netlify.app/2-2.html)
 - [3. 마이페이지(2)](https://boring-pike-e46cc3.netlify.app/1.html)
 - [3. 마이페이지(2) – 1(버튼 선택시)](https://boring-pike-e46cc3.netlify.app/1.html)
-    - 좌측 상단 햄버거 메뉴 클릭
+
+  - 좌측 상단 햄버거 메뉴 클릭
 
 - [4. 관리자 정보](https://boring-pike-e46cc3.netlify.app/4.html)
+- [5. 1:1문의](https://boring-pike-e46cc3.netlify.app/5.html)
+- [6-1. 1:1문의 상세(답변 후)](https://boring-pike-e46cc3.netlify.app/6.html)
+- [6. 1:1문의 상세(답변 전)](https://boring-pike-e46cc3.netlify.app/6.html)
+- [7. 1:1문의하기](https://boring-pike-e46cc3.netlify.app/7.html)
+- [8. 관리자 인증](https://boring-pike-e46cc3.netlify.app/8.html)
+- [10. 공간 게시물 상세 - 4(댓글창)](https://boring-pike-e46cc3.netlify.app/10-4.html)
 
--------------------------
+---
 
-- [5. 1:1문의]()
-- [6-1. 1:1문의 상세(답변 후)]()
-- [6. 1:1문의 상세(답변 전)]()
-- [7. 1:1문의하기]()
-- [8. 관리자 인증]()
-- [10. 공간 게시물 상세 - 4(댓글창)]()
 - [10. 공감 게시물 상세]()
 - [10. 공감 게시물 상세 – 1(사진일때)]()
 - [10. 공감 게시물 상세 – 2(버튼 클릭시)]()

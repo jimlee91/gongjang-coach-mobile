@@ -63,7 +63,7 @@ form {
   }
   .file {
     width: 100%;
-    height: 30px;
+    min-height: 30px;
     border: 1px solid rgba(100, 100, 100, 0.5);
     border-radius: 7px;
     font-size: 10px;
@@ -297,5 +297,51 @@ form {
   }
   input {
     flex: 1;
+  }
+}
+
+.file {
+  width: 100%;
+  .lists {
+    padding: 10px 0;
+  }
+  .fileField-item {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 12px;
+      font-weight: 300;
+    }
+    a {
+      @include text-indent;
+      width: 15px;
+      height: 15px;
+      background: url("../images/i-x.png") no-repeat center;
+      background-size: auto 10px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.btn-checkbox {
+  span {
+    width: 40px;
+    height: 24px;
+    line-height: 22px;
+    display: block;
+    border: 1px solid $base;
+    color: $base;
+    border-radius: 2em;
+    text-align: center;
+  }
+
+  input:checked + span {
+    background: $base;
+    color: #fff;
   }
 }

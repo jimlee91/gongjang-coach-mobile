@@ -1,0 +1,52 @@
+@@include('./include/header.html')
+
+<header class="header pdt-45 pdb-28">
+  <div class="wrap">
+    <div class="top text-center">
+      <img src="/assets/images/header-logo.png" alt="" />
+    </div>
+    <div class="header__title justify-between mgt-54">
+      <h2 class="text">
+        <span>1:1 문의</span>
+      </h2>
+      <a href="" class="btn">수정완료</a>
+    </div>
+  </div>
+</header>
+
+<div class="container registered pdt-20 pdb-100">
+  <div class="wrap">
+    <form action="">
+      <div class="form">
+        <div class="form__row mgb-15">
+          <label for="" class="form__title">제목</label>
+          <div class="box">
+            <input type="text" placeholder="제목을 입력하세요." value="" />
+          </div>
+        </div>
+        <div class="form__row mgb-15">
+          <label for="" class="form__title">내용</label>
+          <div class="box">
+            <textarea name="" id="" placeholder="내용을 입력하세요."> </textarea>
+          </div>
+        </div>
+        <div class="form__row mgb-15 relative">
+          <label for="" class="form__title">업로드</label>
+          <div class="box">
+            <!-- <label for="poster" class="btn btn-red absolute right-0" style="top: -5px; width: 40px; margin-top: 0;">추가</label> -->
+            <label for="poster" class="file muliple">
+              <input type="file" hidden id="poster" muliple accept="image/*" />
+              <ul class="lists"></ul>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="btnbox mgt-50">
+        <button class="submit-btn">확인</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+@@include('./include/global.html') @@include('./include/footer.html')

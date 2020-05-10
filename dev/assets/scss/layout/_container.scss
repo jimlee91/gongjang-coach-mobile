@@ -36,3 +36,10 @@
     }
   }
 }
+
+.container {
+  background: #fff;
+  &.right-bordered {
+    border-bottom-right-radius: 32px;
+  }
+}
