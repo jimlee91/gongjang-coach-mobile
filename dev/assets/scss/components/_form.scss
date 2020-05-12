@@ -52,7 +52,19 @@ form {
   }
 }
 
+.form.flex {
+  @apply flex-wrap;
+}
 .form__row {
+  &.form__row-half {
+    width: 50%;
+    flex: none;
+    margin-bottom: 10px;
+  }
+  &.form__row--full {
+    width: 100%;
+    flex: none;
+  }
   &.column {
     display: flex;
     .form__title {
@@ -410,5 +422,17 @@ form {
   }
   .info {
     flex: 1;
+  }
+}
+
+.i-list {
+  height: 70px;
+  overflow: auto;
+  border-top: 1px solid rgba(100,100,100,.5);
+  border-bottom: 1px solid rgba(100,100,100,.5);
+  padding:5px 0;
+  li {
+    line-height: 20px;
+    font-size: 10px;
   }
 }

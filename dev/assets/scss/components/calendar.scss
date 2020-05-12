@@ -1,0 +1,84 @@
+.reservation {
+
+  .calendar {
+
+    .ui-widget-header .ui-icon {
+      display: none;
+    }
+    .ui-datepicker .ui-datepicker-prev {
+      background: url('../images/i-arrow-right.png') no-repeat center;
+      background-size: auto 14px;
+      transform: rotate(180deg) translateY(50%);
+    }
+    .ui-datepicker .ui-datepicker-prev:hover {
+      border: none !important;
+      background: url('../images/i-arrow-right.png') no-repeat center;
+      background-size: auto 14px;
+      transform: rotate(180deg) translateY(50%);
+    }
+    .ui-datepicker .ui-datepicker-next {
+      background: url('../images/i-arrow-right.png') no-repeat center;
+      background-size: auto 14px;
+      transform: translateY(-50%);
+    }
+    .ui-datepicker .ui-datepicker-next:hover {
+      border: none !important;
+      background: url('../images/i-arrow-right.png') no-repeat center;
+      background-size: auto 14px;
+    }
+  }
+  .ui-widget.ui-widget-content {
+    width: 100%;
+    margin:0 auto;
+    //border: 1px solid $base;
+    border-radius: 7px;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+  }
+  .ui-datepicker .ui-datepicker-header {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background:#fff;
+    color:#5a5553;
+    border: none;
+    span {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .ui-datepicker-year {
+    display: none;
+  }
+
+  .ui-datepicker td {
+    width: 50px;
+    text-align: center;
+    height: 35px;
+    padding: 0;
+  }
+  .ui-datepicker td span, .ui-datepicker td a {
+    background: none;
+    border: none;
+    text-align: center;
+    width: 30px;
+    display: inline-block;
+    padding: 0;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    color:#5A5553;;
+    border: 2px solid #ff3b00;
+    border-radius: 50%;
+    line-height: 26px;
+  }
+}
