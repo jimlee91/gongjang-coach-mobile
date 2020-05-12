@@ -30,6 +30,11 @@ $(document).ready(function () {
     $("html, body").css("overflow", "hidden");
     $(".left-nav").show();
   });
+
+  $('.global__button').on('click', function(){
+    $('.global__nav').toggle();
+    $(this).toggleClass('active');
+  })
 });
 
 function showModal(el) {

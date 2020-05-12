@@ -5,6 +5,88 @@
   width: 100%;
   z-index: 2000;
 
+  .global__nav-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: rgba(0,0,0,.5);
+  }
+  .global__nav {
+    display: none;
+  }
+  .global__nav-content {
+    @apply fixed left-0;
+    bottom: 65px;
+    width: 100%;
+    z-index: 3000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    .global__nav-header {
+      background:#fff;
+      border-bottom: 10px solid #eaeaea;
+      h3 {
+        font-size: 22px;
+        line-height: 80px;
+      }
+    }
+    .global__nav-body {
+      background:#fff;
+      padding:0 32px;
+      @apply flex flex-wrap;
+      a {
+        padding: 20px 0;
+        width: 20%;
+        flex: none;
+        text-align: center;
+        font-size: 10px;
+        border-bottom: 1px solid rgba(100,100,100,.3);
+        &:nth-child(n + 6) {
+          border-bottom: none;
+        }
+        &:hover,
+        &.active {
+          color:$red;
+        }
+        span {
+          display: block;
+          text-align: center;
+          height: 20px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .global__nav-foot {
+      width: 100%;
+      height: 45px;
+      background: url('../images/global-bg.png') no-repeat center;
+      background-size: auto 45px;
+      position: relative;
+      &:before {
+        content:'';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        width: calc(50% - 73px);
+        background:#fff;
+        border-bottom: 3px solid #ffb100;
+      }
+      &:after {
+        content:'';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: calc(50% - 73px);
+        background:#fff;
+        border-bottom: 3px solid #ffb100;
+      }
+    }
+  }
   .global__button {
     width: 55px;
     height: 55px;
@@ -12,14 +94,13 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 35px;
-    z-index: 1000;
+    z-index: 4000;
     background: url("../images/global-logo.png") $yello no-repeat center;
     background-size: auto 18px;
     border-radius: 50%;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
     outline-width: 0;
 
-    &:hover,
     &.active {
       background: url("../images/global-logo.png") $red no-repeat center;
       background-size: auto 18px;

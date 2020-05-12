@@ -61,9 +61,7 @@ gulp
 - [2. 아카데미 등록 – 9(리스트박스 오픈)](https://boring-pike-e46cc3.netlify.app/2-2.html)
 - [3. 마이페이지(2)](https://boring-pike-e46cc3.netlify.app/1.html)
 - [3. 마이페이지(2) – 1(버튼 선택시)](https://boring-pike-e46cc3.netlify.app/1.html)
-
   - 좌측 상단 햄버거 메뉴 클릭
-
 - [4. 관리자 정보](https://boring-pike-e46cc3.netlify.app/4.html)
 - [5. 1:1문의](https://boring-pike-e46cc3.netlify.app/5.html)
 - [6-1. 1:1문의 상세(답변 후)](https://boring-pike-e46cc3.netlify.app/6.html)
@@ -89,7 +87,7 @@ gulp
 - 14. 가운데 버튼
 - 14. 가운데 버튼 – 1
     - 전체 공통
-    
+    - **7개 메뉴 아이콘 이미지 필요**
 - [15. 아카데미 정보](https://boring-pike-e46cc3.netlify.app/15.html)
 - [16. 수강생](https://boring-pike-e46cc3.netlify.app/16.html)
 - [17. 수강생 상세](https://boring-pike-e46cc3.netlify.app/17.html)
