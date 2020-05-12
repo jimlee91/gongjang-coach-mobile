@@ -163,4 +163,4 @@ exports.default = gulp.series(
   gulp.parallel(server, watchTask)
 );
 
-exports.build = gulp.series(clean, html, scss, js, minImg);
+exports.build = gulp.series(clean, html, scss, js, minImg, plugin);
