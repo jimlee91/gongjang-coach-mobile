@@ -36,6 +36,7 @@
     .global__nav-body {
       background:#fff;
       padding:0 32px;
+      margin-bottom: -2px;
       @apply flex flex-wrap;
       a {
         padding: 20px 0;
