@@ -1,0 +1,35 @@
+
+.admtable {
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  &.border-bottom {
+    border-bottom: 1px solid rgba(100,100,100, .5);
+  }
+  .btn {
+    margin-left: 0 !important;
+  }
+  .text-left {
+    text-align: left !important;
+  }
+  .text-right {
+    text-align: right !important;
+  }
+  th {
+    font-size: 10px;
+    height: 35px;
+    border-bottom: 1px solid rgba(100,100,100, .5);
+  }
+  td {
+    font-size: 10px;
+    text-align: center;
+    padding: 8px 5px;
+    &.space {
+      height: 10px !important;
+    }
+    a {
+      font-size: 10px;
+    }
+  }
+}

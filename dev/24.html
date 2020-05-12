@@ -1,0 +1,127 @@
+@@include('./include/header.html')
+
+<header class="header header--shadow pdt-45 pdb-28">
+    <div class="wrap">
+        <div class="top text-center">
+            <img src="/assets/images/header-logo.png" alt="" />
+        </div>
+        <div class="header__title justify-between mgt-54">
+            <h2 class="text">
+                <span>공지사항 상세</span>
+            </h2>
+        </div>
+    </div>
+</header>
+
+<div class="container registered pdt-20 ">
+    <div class="wrap">
+        <div class="form">
+            <div class="form__row  mgb-20">
+                <label for="" class="form__title">공간 선택</label>
+                <div class="box">
+                    <input type="text" disabled value="HNS 풋살 파크 아카데미">
+                </div>
+            </div>
+            <div class="form__row  mgb-20">
+                <label for="" class="form__title">작성자</label>
+                <div class="box">
+                    <input type="text" readonly value="HNS">
+                </div>
+            </div>
+            <div class="form__row  mgb-20 pdt-20 mgt-20" style="border-top: 1px solid rgba(100,100,100,.5);">
+                <label for="" class="form__title">내용</label>
+                <div class="box">
+                    <textarea name="" id="" placeholder="내용을 입력하세요." readonly>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum id necessitatibus nihil officia quas quasi quo quos sit. Modi, quidem.</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-info">
+            <div class="flex font-10 mgb-10">
+                <strong class="l-border w-24">조회수</strong> 123
+            </div>
+            <div class="flex font-10 mgb-10">
+                <strong class="l-border w-24">게시물 번호</strong> 123
+            </div>
+            <div class="flex font-10 mgb-20">
+                <strong class="l-border w-24">작성일</strong> 123
+            </div>
+        </div>
+
+    </div>
+
+    <div class="comment ">
+        <form action="">
+            <div class="comment__form ">
+                <div class="comment__textbox">
+                    <textarea name="" id="" required placeholder="댓글을 입력해주세요."></textarea>
+                </div>
+                <button class="submit waves-effect" type="submit">전송</button>
+            </div>
+        </form>
+
+        <div class="l-border mgt-10">
+            <strong class="font-10 color-white">댓글 관리</strong>
+        </div>
+
+        <div class="comment__list">
+            <article class="comment__item">
+                <div class="comment__author">
+                    <a href="" class="userCard">
+                        <div class="userCard__thumb">
+                            <img src="//via.placeholder.com/65x65" alt="" />
+                        </div>
+                        <div class="userCard__user">
+                            <div class="userCard__name">
+                                김공장
+                            </div>
+                            <div class="userCard__team">
+                                <p>티키타카 스포츠</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="comment__content">
+                    <div class="comment__createdAt left">2.24 am 8:00</div>
+                    <p class="comment__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+                <a href="" class="btn--default white mgl-10">삭제</a>
+            </article>
+            <article class="comment__item">
+                <div class="comment__author">
+                    <a href="" class="userCard">
+                        <div class="userCard__thumb">
+                            <img src="//via.placeholder.com/65x65" alt="" />
+                        </div>
+                        <div class="userCard__user">
+                            <div class="userCard__name">
+                                김공장
+                            </div>
+                            <div class="userCard__team">
+                                <p>티키타카 스포츠</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="comment__content">
+                    <div class="comment__createdAt left">2.24 am 8:00</div>
+                    <p class="comment__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error maxime nam quaerat unde veniam. Accusantium consequatur cumque deserunt distinctio incidunt minima minus nemo quo .
+                    </p>
+                </div>
+                <a href="" class="btn--default white mgl-10">삭제</a>
+            </article>
+        </div>
+
+
+        <div class="btnbox mgt-30">
+            <a href="" class="submit-btn">수정완료</a>
+        </div>
+    </div>
+
+
+</div>
+
+@@include('./include/global.html') @@include('./include/footer.html')

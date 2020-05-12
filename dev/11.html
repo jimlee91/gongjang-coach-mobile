@@ -1,0 +1,96 @@
+@@include('./include/header.html')
+
+<header class="header pdt-45 pdb-28">
+    <div class="wrap">
+        <div class="top text-center">
+            <img src="/assets/images/header-logo.png" alt="" />
+        </div>
+        <div class="header__title justify-between mgt-54">
+            <h2 class="text">
+                <span>게시물 수정</span>
+            </h2>
+        </div>
+    </div>
+</header>
+
+<div class="container registered pdt-20 pdb-120">
+    <div class="wrap">
+        <form action="">
+            <div class="form">
+                <div class="form__row column mgb-15">
+                    <label for="" class="form__title">카테고리</label>
+                    <div class="box column">
+                        <select name="" id="">
+                            <option value="">김공장님의 공간</option>
+                            <option value="">전국 풋살대회 공간</option>
+                            <option value="">가나다 스포츠 공간</option>
+                        </select>
+                        <p class="form__help mgt-5">
+                            * 소속된 공간 목록 중 업로드할 공간을 선택하세요.
+                        </p>
+                    </div>
+                </div>
+                <div class="form__row column mgb-15">
+                    <label for="" class="form__title">제목</label>
+                    <div class="box column">
+                        <input type="text" placeholder="제목을 입력해주세요.">
+                    </div>
+                </div>
+                <div class="form__row column mgb-15">
+                    <label for="" class="form__title">내용</label>
+                    <div class="box">
+                        <textarea name="" id="" placeholder="내용을 입력하세요."> </textarea>
+                    </div>
+                </div>
+                <div class="form__row column mgb-15 relative">
+                    <label for="" class="form__title">사진</label>
+                    <div class="box column">
+                        <!-- <label for="poster" class="btn btn-red absolute right-0" style="top: -5px; width: 40px; margin-top: 0;">추가</label> -->
+                        <label for="poster" class="file muliple">
+                            <input type="file" hidden id="poster" muliple accept="image/*" />
+                            <ul class="lists"></ul>
+                        </label>
+                        <p class="form__help mgt-5">
+                            * 사진 업로드 가능
+
+                        </p>
+                    </div>
+                </div>
+                <div class="form__row column mgb-20">
+                    <label for="" class="form__title">동영상</label>
+                    <div class="box column">
+                        <input type="text" placeholder="공유 URL을 입력하세요." class="border">
+                    </div>
+                </div>
+                <div class="form__row column ">
+                    <label for="" class="form__title vertical-top">권한설정</label>
+                    <div class="box column pdt-2">
+                        <label for="c1" class="checkbox mgb-8">
+                            <input type="radio" name="case" hidden id="c1">
+                            <span></span> 권한1
+                        </label>
+                        <label for="c2" class="checkbox mgb-8">
+                            <input type="radio" name="case" hidden id="c2">
+                            <span></span> 권한2
+                        </label>
+                        <label for="c3" class="checkbox mgb-8">
+                            <input type="radio" name="case" hidden id="c3">
+                            <span></span> 권한3
+                        </label>
+                        <label for="c4" class="checkbox">
+                            <input type="radio" name="case" hidden id="c4">
+                            <span></span> 권한4
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btnbox mgt-50">
+                <button class="submit-btn small red">수정</button>
+                <button class="white-btn small mgl-10">삭제</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@@include('./include/global.html') @@include('./include/footer.html')

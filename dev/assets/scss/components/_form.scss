@@ -1,6 +1,11 @@
 form {
   display: block;
 }
+
+.form__help {
+  font-size: 10px;
+  color:$red;
+}
 .form {
   &.form--border {
     padding: 28px;
@@ -27,13 +32,51 @@ form {
   font-size: 12px;
   line-height: 18px;
   font-weight: 600;
+  &.vertical-top {
+    line-height: 14px !important;
+  }
+  &.swtc {
+    width: calc(100% - 100px) !important;
+    flex: none !important;
+    h3 {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 14px;
+    }
+    p {
+      font-size: 10px;
+      font-weight: 300;
+      line-height: 12px;
+      margin-top: 2px;
+    }
+  }
 }
 
 .form__row {
+  &.column {
+    display: flex;
+    .form__title {
+      width: 70px;
+      flex: none;
+      line-height: 30px;
+    }
+    .box {
+      flex: 1;
+
+      select,
+      input,
+      textarea {
+        margin-top: 0;
+      }
+    }
+  }
 }
 
 .box {
   @apply flex;
+  &.column {
+    @apply flex-col;
+  }
   .btn {
     white-space: nowrap;
     width: 65px;
@@ -81,6 +124,7 @@ form {
     flex: 1;
     width: 100%;
     height: 30px;
+    min-height: 30px;
     border-bottom: 1px solid rgba(100, 100, 100, 0.5);
     font-size: 10px;
     margin-top: 5px;
@@ -118,6 +162,7 @@ form {
     flex: 1;
     width: 100%;
     height: 30px;
+    min-height: 30px;
     border: 1px solid rgba(100, 100, 100, 0.5);
     border-radius: 7px;
     font-size: 10px;
@@ -243,7 +288,7 @@ form {
 }
 .switch input:checked + span:after {
   left: 4px;
-  background: #00f;
+  background: $red;
 }
 .switch input:disabled + span:before {
   opacity: 0.3;
@@ -343,5 +388,27 @@ form {
   input:checked + span {
     background: $base;
     color: #fff;
+  }
+}
+
+
+.stdt-info {
+  display: flex;
+  .userthumb {
+    flex: none;
+    width: 120px;
+    flex: none;
+    margin-right: 20px;
+
+    .img {
+      display: block;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+  .info {
+    flex: 1;
   }
 }

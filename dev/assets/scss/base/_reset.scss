@@ -132,3 +132,74 @@ select::-ms-expand {
   line-height: 120px;
   opacity: 0.8;
 }
+
+.color-white {
+  color:#fff !important;
+}
+
+.l-border {
+  position: relative;
+  padding-left: 15px;
+  &:after {
+    content:'';
+    display: block;
+    width: 2px;
+    height: 10px;
+    background: $red;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+}
+
+.newbtnbox {
+  margin-left: auto;
+  display: flex;
+  a {
+    line-height: 22px;
+    text-align: center;
+    padding:0 5px;
+    height: 24px;
+    min-width: 65px;
+    font-size: 10px;
+    color:#5a5553;
+    border:1px solid #5a5553;
+    border-radius: 5px;
+    margin-right: 8px;
+    transition: all .3s;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background:#5a5553;
+      color:#fff;
+    }
+
+    &.red {
+      border-color:$red;
+      color:$red;
+      &:hover {
+        background:$red;
+        color:#fff;
+      }
+    }
+    &.gray {
+      border-color:rgba(255,255,255,.6);
+      color:rgba(255,255,255,.6);
+      &:hover {
+        background:rgba(255,255,255,.6);
+        color:#fff;
+      }
+    }
+  }
+}
+
+.container > .wrap > .flex.justify-end {
+  select{
+    margin-top: 0;
+    min-height: 24px !important;
+    height:24px !important;
+  }
+}

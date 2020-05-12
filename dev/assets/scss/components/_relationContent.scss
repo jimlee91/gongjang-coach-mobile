@@ -1,0 +1,50 @@
+.relationContent {
+  border-top: 10px solid #eaeaea;
+  padding: 20px 32px;
+  background: $base;
+
+  .relationContent__list {
+
+  }
+  .relationContent__item {
+    &:nth-child(n + 2) {
+      margin-top: 15px;
+    }
+     @apply flex;
+    .thumb {
+      width: 40%;
+      flex: none;
+    }
+    .relationContent__info {
+      @apply flex flex-col;
+      flex: 1;
+      padding-left: 15px;
+
+      strong {
+        font-size: 10px;
+      }
+      h2 {
+        margin-top: 3px;
+        color: #fff;
+        padding-bottom: 5px;
+        font-size: 12px;
+        line-height: 15px;
+        border-bottom: 1px solid rgba(100,100,100,.5);
+      }
+      p {
+        font-size: 10px;
+        line-height: 15px;
+        color:#fff;
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+
+      .usercard {
+        margin-top: auto;
+        a {
+          color:#fff
+        }
+      }
+    }
+  }
+}

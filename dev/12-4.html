@@ -1,0 +1,172 @@
+@@include('./include/header.html')
+
+<header class="header pdt-45 pdb-28">
+    <div class="wrap">
+        <div class="top text-center">
+            <img src="/assets/images/header-logo.png" alt="" />
+        </div>
+        <div class="header__title justify-between mgt-54">
+            <h2 class="text">
+                <span>게시물 수정</span>
+            </h2>
+        </div>
+    </div>
+</header>
+
+<div class="container registered pdt-20 pdb-120">
+    <div class="wrap">
+        <form action="">
+            <div class="form">
+                <div class="form__row column mgb-15">
+                    <label for="" class="form__title">카테고리</label>
+                    <div class="box column">
+                        <select name="" id="">
+                            <option value="">김공장님의 공간</option>
+                            <option value="">전국 풋살대회 공간</option>
+                            <option value="">가나다 스포츠 공간</option>
+                        </select>
+                        <p class="form__help mgt-5">
+                            * 소속된 공간 목록 중 업로드할 공간을 선택하세요.
+                        </p>
+                    </div>
+                </div>
+                <div class="form__row column mgb-15">
+                    <label for="" class="form__title">제목</label>
+                    <div class="box column">
+                        <input type="text" placeholder="제목을 입력해주세요.">
+                    </div>
+                </div>
+                <div class="form__row column mgb-15">
+                    <label for="" class="form__title">내용</label>
+                    <div class="box">
+                        <textarea name="" id="" placeholder="내용을 입력하세요."> </textarea>
+                    </div>
+                </div>
+                <div class="form__row column mgb-15 relative">
+                    <label for="" class="form__title">사진</label>
+                    <div class="box column">
+                        <!-- <label for="poster" class="btn btn-red absolute right-0" style="top: -5px; width: 40px; margin-top: 0;">추가</label> -->
+                        <label for="poster" class="file muliple">
+                            <input type="file" hidden id="poster" muliple accept="image/*" />
+                            <ul class="lists"></ul>
+                        </label>
+                        <p class="form__help mgt-5">
+                            * 사진 업로드 가능
+
+                        </p>
+                    </div>
+                </div>
+                <div class="form__row column mgb-20">
+                    <label for="" class="form__title">동영상</label>
+                    <div class="box column">
+                        <input type="text" placeholder="공유 URL을 입력하세요." class="border">
+                    </div>
+                </div>
+                <div class="form__row column ">
+                    <label for="" class="form__title vertical-top">권한설정</label>
+                    <div class="box column pdt-2">
+                        <label for="c1" class="checkbox mgb-8">
+                            <input type="radio" name="case" hidden id="c1">
+                            <span></span> 권한1
+                        </label>
+                        <label for="c2" class="checkbox mgb-8">
+                            <input type="radio" name="case" hidden id="c2">
+                            <span></span> 권한2
+                        </label>
+                        <label for="c3" class="checkbox mgb-8">
+                            <input type="radio" name="case" hidden id="c3">
+                            <span></span> 권한3
+                        </label>
+                        <label for="c4" class="checkbox">
+                            <input type="radio" name="case" hidden id="c4">
+                            <span></span> 권한4
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btnbox mgt-50">
+                <button class="submit-btn small red">등록</button>
+                <button class="white-btn small mgl-10">삭제</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<div class="modal" id="shareModal" style="display: flex;">
+    <div class="modal__content full pdb-25">
+        <div class="modal__body ">
+            <div class="detail">
+                <div class="feedDetail">
+                    <article class="feed">
+                        <div class="feed__content">
+                            <div class="feed__slider">
+                                <div class="feed__slide-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQc7Jb6NGtTcS2iYDBYaw7E5m6F5SJPE8xehMPrvkm544lRUIlZ&usqp=CAU" alt="" /></div>
+                                <div class="feed__slide-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR_BmhdU3GBo7sKhMt5VJTeGGaPTR_9XpmDG6ItOYUqHXhS6Kac&usqp=CAU" alt="" /></div>
+                            </div>
+                        </div>
+                        <div class="feed__util">
+                            <div class="feed__actions">
+                                <button class="feed__action-btn feed__action-like active">좋아요</button>
+                                <button class="feed__action-btn feed__action-unlike">싫어요</button>
+                                <button class="feed__action-btn feed__action-share" onclick="showModal('#shareModal');">공유</button>
+                                <a href="" class="feed__action-btn feed__action-report">신고</a>
+                            </div>
+                            <div class="detail__info">
+                                <div class="feed__state">
+                                    <span class="feed__views">15</span>
+                                    <span class="feed__likes">13</span>
+                                    <span class="feed__talks">2</span>
+                                </div>
+                                <p>2020.04.03</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="detail__content">
+                <header class="detail__header">
+                    <div class="detail__info">
+                        <h2 class="detail__title">
+                            전국 풋살대회 리플레이 영상
+                            <span class="color-red font-10 vertical-baseline">인기영상</span>
+                        </h2>
+                        <div class="detail__author flex">
+                            <div class="usercard">
+                                <a class="font-10 lineheight-20" href="">
+                                    <div class="userCard__thumb mgr-3" style="width: 20px;">
+                                        <span class="is_new"></span>
+                                        <img src="//via.placeholder.com/20x20" alt="" />
+                                    </div>
+                                    hongildong23
+                                </a>
+                            </div>
+
+                            <a href="" class="ml-auto detail__link">
+                                <span>공간가기</span>
+                            </a>
+                        </div>
+                    </div>
+                </header>
+                <div class="detail__body">
+                    <div class="inner">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, asperiores assumenda at atque commodi, deserunt distinctio doloribus eveniet facere fugit iure laboriosam, molestiae
+                            nostrum quas saepe sed ullam. Atque aut corporis dignissimos doloremque ducimus eum ipsa laboriosam laudantium nemo, nostrum quo repellat tempore vel velit, veritatis vitae voluptas?
+                            Deserunt dicta eaque hic ipsa nihil non provident quidem sequi sint voluptates! Assumenda, culpa dolore excepturi hic in ipsa magnam minima minus nostrum, nulla quasi sequi unde veritatis.
+                            Ad aliquam beatae, natus nesciunt non possimus quasi quibusdam quis, quisquam, sapiente totam unde velit voluptas. Corporis cupiditate, debitis ipsum praesentium quo reiciendis sit?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal__btnbox ">
+            <a href="#//" class="modal__btn js-modal-close" >확인</a>
+        </div>
+    </div>
+</div>
+
+@@include('./include/global.html') @@include('./include/footer.html')

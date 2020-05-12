@@ -14,9 +14,13 @@
 @import "components/board";
 @import "components/comment";
 @import "components/filter";
+@import "components/relationContent";
+@import "components/pagination";
 
 @import "layout/container";
 @import "layout/header";
 
 @import "pages/login";
+@import "pages/detail";
 @import "pages/registered";
+@import "pages/adm";
