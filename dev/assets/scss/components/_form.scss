@@ -47,7 +47,7 @@ form {
       font-size: 10px;
       font-weight: 300;
       line-height: 12px;
-      margin-top: 2px;
+      margin-top: 5px;
     }
   }
 }
@@ -86,6 +86,7 @@ form {
 
 .box {
   @apply flex;
+  position: relative;
   &.column {
     @apply flex-col;
   }
@@ -93,13 +94,12 @@ form {
     white-space: nowrap;
     width: 65px;
     height: 24px;
-    line-height: 20px;
     border: 1px solid $yello;
     font-size: 10px;
     text-align: center;
     line-height: 22px;
     border-radius: 2em;
-    margin-top: 6px;
+    margin-top: 11px;
     transition: all 0.3s;
     &:hover,
     &:active {
@@ -115,6 +115,10 @@ form {
         color: #fff;
       }
     }
+    &.btn--w85 {
+      width: 85px;
+      flex: none;
+    }
   }
   .file {
     width: 100%;
@@ -122,21 +126,30 @@ form {
     border: 1px solid rgba(100, 100, 100, 0.5);
     border-radius: 7px;
     font-size: 10px;
-    margin-top: 5px;
+    margin-top: 13px;
     padding: 0 10px;
     background: url("../images/header-search.png") no-repeat calc(100% - 10px) center;
     background-size: auto 12px;
 
     span {
-      line-height: 28px;
+      line-height: 30px;
       display: block;
     }
+  }
+  .form-search {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url("../images/header-search.png") no-repeat center;
+    background-size: auto 12px;
   }
   input {
     flex: 1;
     width: 100%;
-    height: 30px;
-    min-height: 30px;
+    height: 32px;
+    min-height: 32px;
     border-bottom: 1px solid rgba(100, 100, 100, 0.5);
     font-size: 10px;
     margin-top: 5px;
@@ -154,6 +167,14 @@ form {
         height: 30px;
         line-height: 28px;
         margin-top: 0;
+
+        &.spc {
+          width: 40px;
+          height: 24px;
+          line-height: 22px;
+          margin-top: 0;
+
+        }
       }
     }
   }
@@ -164,7 +185,7 @@ form {
     border: 1px solid rgba(100, 100, 100, 0.5);
     border-radius: 7px;
     font-size: 10px;
-    margin-top: 5px;
+    margin-top: 15px;
     padding: 10px;
     line-height: 16px;
     resize: none;
@@ -173,13 +194,13 @@ form {
   select {
     flex: 1;
     width: 100%;
-    height: 30px;
+    height: 32px;
     min-height: 30px;
     border: 1px solid rgba(100, 100, 100, 0.5);
     border-radius: 7px;
     font-size: 10px;
-    margin-top: 5px;
     padding: 0 10px;
+    margin-top: 13px;
     background: url("../images/select-arrow.png") no-repeat calc(100% - 10px) center;
   }
 }

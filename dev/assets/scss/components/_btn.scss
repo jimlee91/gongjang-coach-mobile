@@ -20,6 +20,7 @@
   @apply text-center;
   background: #ffb100;
   transition: all 0.3s;
+  font-weight: 600;
   &:hover {
     background: #ff3b00;
   }
@@ -36,6 +37,7 @@
 .white-btn {
   width: 185px;
   height: 36px;
+  font-weight: 600;
   line-height: 36px;
   border-radius: 2em;
   color: #5a5553;
@@ -44,6 +46,7 @@
   background: #fff;
   border: 1px solid $yello;
   transition: all 0.3s;
+  &:active,
   &:hover {
     background: $yello;
     color: #fff;

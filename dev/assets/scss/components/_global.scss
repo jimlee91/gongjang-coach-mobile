@@ -58,6 +58,63 @@
           height: 20px;
           margin-bottom: 5px;
         }
+
+        &:nth-child(1) {
+          span {
+            background: url('../images/global1.png') no-repeat center top;
+          }
+          &.active span {
+            background: url('../images/global1-active.png') no-repeat center top;
+          }
+        }
+        &:nth-child(2) {
+          span {
+            background: url('../images/global2.png') no-repeat center top;
+          }
+          &.active span {
+            background: url('../images/global2-active.png') no-repeat center top;
+          }
+        }
+        &:nth-child(3) {
+          span {
+            background: url('../images/global3.png') no-repeat center top;
+          }
+          &.active span {
+            background: url('../images/global3-active.png') no-repeat center top;
+          }
+        }
+        &:nth-child(4) {
+          span {
+            background: url('../images/global4.png') no-repeat center top;
+          }
+          &.active span {
+            background: url('../images/global4-active.png') no-repeat center top;
+          }
+        }
+        &:nth-child(5) {
+          span {
+            background: url('../images/global5.png') no-repeat center top;
+          }
+          &.active span {
+            background: url('../images/global5-active.png') no-repeat center top;
+          }
+        }
+        &:nth-child(6) {
+          span {
+            background: url('../images/global6.png') no-repeat center top;
+          }
+          &.active span {
+            background: url('../images/global6-active.png') no-repeat center top;
+          }
+        }
+        &:nth-child(7) {
+          span {
+            background: url('../images/global7.png') no-repeat center top;
+          }
+          &.active span {
+            background: url('../images/global7-active.png') no-repeat center top;
+          }
+        }
       }
     }
     .global__nav-foot {
@@ -101,7 +158,18 @@
     border-radius: 50%;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
     outline-width: 0;
+    transition: all .3s;
 
+    &.global__button--bigger {
+      width: 73px;
+      height: 73px;
+      background-size: auto 22px;
+
+      &.active {
+        width: 55px;
+        height: 55px;
+      }
+    }
     &.active {
       background: url("../images/global-logo.png") $red no-repeat center;
       background-size: auto 18px;

@@ -152,6 +152,12 @@ select::-ms-expand {
     transform: translateY(-50%);
     z-index: 2;
   }
+
+  &.yello {
+    &:after {
+      background: $yello;
+    }
+  }
 }
 
 .newbtnbox {

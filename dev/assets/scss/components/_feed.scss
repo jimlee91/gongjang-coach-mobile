@@ -23,7 +23,6 @@
     }
     button {
       @include text-indent;
-      border: 1px solid $base;
       width: 10px;
       height: 10px;
       background: #efefef;

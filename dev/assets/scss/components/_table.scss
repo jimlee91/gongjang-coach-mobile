@@ -19,6 +19,11 @@
     &.text-left {
       @apply text-left;
     }
+
+    &:first-child,
+    &.no {
+      font-weight: 600;
+    }
   }
 
   .btnbox {

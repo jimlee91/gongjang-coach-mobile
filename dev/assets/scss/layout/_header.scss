@@ -58,7 +58,7 @@
         width: 20px;
         height: 20px;
         @apply flex items-center justify-center;
-        margin-left: 5px;
+        margin-left: 15px;
       }
     }
   }
@@ -69,8 +69,13 @@
     color: $yello;
     font-size: 10px;
     &.state-2-1 {
-      padding-left: 20px;
-      background: url("../") no-repeat left center;
+      padding-left: 30px;
+      background: url("../images/step2-1.png") no-repeat left center;
+      background-size: auto 8px;
+    }
+    &.state-2-2 {
+      padding-left: 30px;
+      background: url("../images/step2-2.png") no-repeat left center;
       background-size: auto 8px;
     }
   }

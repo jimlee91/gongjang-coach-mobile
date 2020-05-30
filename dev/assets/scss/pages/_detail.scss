@@ -26,13 +26,15 @@
         line-height: 20px;
       }
       .detail__author {
-        @apply flex items-center justify-between;
+        @apply flex items-end justify-between;
         .userCard {
           font-size: 12px;
           color:#333;
         }
         .userCard__thumb {
           width: 40px;
+          border-radius: 50%;
+          overflow: hidden;
         }
       }
     }
