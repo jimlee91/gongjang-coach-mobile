@@ -1,11 +1,10 @@
-
 .admtable {
   table {
     width: 100%;
     table-layout: fixed;
   }
   &.border-bottom {
-    border-bottom: 1px solid rgba(100,100,100, .5);
+    border-bottom: 1px solid rgba(100, 100, 100, 0.5);
   }
   .btn {
     margin-left: 0 !important;
@@ -19,7 +18,7 @@
   th {
     font-size: 10px;
     height: 35px;
-    border-bottom: 1px solid rgba(100,100,100, .5);
+    border-bottom: 1px solid rgba(100, 100, 100, 0.5);
   }
   td {
     font-size: 10px;
@@ -36,10 +35,8 @@
     &.no {
       font-weight: 600;
     }
-
   }
 }
-
 
 .attendance-arrow {
   height: 90px;
@@ -47,8 +44,8 @@
   background-size: auto 12px;
 }
 .attendance {
-  border-top: 1px solid rgba(100,100,100,.5);;
-  border-bottom: 1px solid rgba(100,100,100,.5);
+  border-top: 1px solid rgba(100, 100, 100, 0.5);
+  border-bottom: 1px solid rgba(100, 100, 100, 0.5);
   padding-top: 10px;
   padding-bottom: 10px;
   & + .attendance {
@@ -73,12 +70,23 @@
 }
 
 .prd__section-tab {
-  background:#eaeaea;
   height: 40px;
+  border-bottom: 10px solid #eaeaea;
   padding-bottom: 10px;
   padding-left: 35px;
   width: 100%;
-  strong{
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 35px;
+    height: 40px;
+    background: #eaeaea;
+    border-top-right-radius: 7px;
+  }
+  strong {
     font-size: 14px;
   }
   span {
@@ -88,9 +96,9 @@
     padding-right: 12px;
   }
   div {
-    padding:0 10px;
+    padding: 0 10px;
     width: 100%;
-    background:#fff;
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;

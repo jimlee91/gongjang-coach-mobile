@@ -1,8 +1,12 @@
 @@include('./include/header.html') @@include('./include/static-header.html')
 
 <style>
-  .container{background: none;}
-  body{background:#5a5553;}
+  .container {
+    background: none;
+  }
+  body {
+    background: #5a5553;
+  }
 </style>
 <div class="container pdt-70 pdb-100">
   <div class="detail">
@@ -10,14 +14,26 @@
       <article class="feed">
         <div class="feed__content">
           <div class="feed__slider">
-            <div class="feed__slide-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQc7Jb6NGtTcS2iYDBYaw7E5m6F5SJPE8xehMPrvkm544lRUIlZ&usqp=CAU" alt="" /></div>
-            <div class="feed__slide-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR_BmhdU3GBo7sKhMt5VJTeGGaPTR_9XpmDG6ItOYUqHXhS6Kac&usqp=CAU" alt="" /></div>
+            <div class="feed__slide-img">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQc7Jb6NGtTcS2iYDBYaw7E5m6F5SJPE8xehMPrvkm544lRUIlZ&usqp=CAU"
+                alt=""
+              />
+            </div>
+            <div class="feed__slide-img">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR_BmhdU3GBo7sKhMt5VJTeGGaPTR_9XpmDG6ItOYUqHXhS6Kac&usqp=CAU"
+                alt=""
+              />
+            </div>
           </div>
         </div>
         <div class="feed__util">
           <div class="feed__actions">
-            <button class="feed__action-btn feed__action-like active">좋아요</button>
-            <button class="feed__action-btn feed__action-unlike">싫어요</button>
+            <button class="feed__action-btn feed__action-like active" onclick="$(this).toggleClass('active')">
+              좋아요
+            </button>
+            <button class="feed__action-btn feed__action-unlike" onclick="$(this).toggleClass('active')">싫어요</button>
             <button class="feed__action-btn feed__action-share" onclick="showModal('#shareModal');">공유</button>
             <a href="" class="feed__action-btn feed__action-report">신고</a>
           </div>
@@ -60,20 +76,21 @@
       <div class="detail__body">
         <div class="inner">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, asperiores assumenda at atque commodi, deserunt distinctio doloribus eveniet facere fugit iure laboriosam, molestiae
-            nostrum quas saepe sed ullam. Atque aut corporis dignissimos doloremque ducimus eum ipsa laboriosam laudantium nemo, nostrum quo repellat tempore vel velit, veritatis vitae voluptas?
-            Deserunt dicta eaque hic ipsa nihil non provident quidem sequi sint voluptates! Assumenda, culpa dolore excepturi hic in ipsa magnam minima minus nostrum, nulla quasi sequi unde veritatis.
-            Ad aliquam beatae, natus nesciunt non possimus quasi quibusdam quis, quisquam, sapiente totam unde velit voluptas. Corporis cupiditate, debitis ipsum praesentium quo reiciendis sit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, asperiores assumenda at atque commodi,
+            deserunt distinctio doloribus eveniet facere fugit iure laboriosam, molestiae nostrum quas saepe sed ullam.
+            Atque aut corporis dignissimos doloremque ducimus eum ipsa laboriosam laudantium nemo, nostrum quo repellat
+            tempore vel velit, veritatis vitae voluptas? Deserunt dicta eaque hic ipsa nihil non provident quidem sequi
+            sint voluptates! Assumenda, culpa dolore excepturi hic in ipsa magnam minima minus nostrum, nulla quasi
+            sequi unde veritatis. Ad aliquam beatae, natus nesciunt non possimus quasi quibusdam quis, quisquam,
+            sapiente totam unde velit voluptas. Corporis cupiditate, debitis ipsum praesentium quo reiciendis sit?
           </p>
         </div>
       </div>
     </div>
 
-    @@include('./include/comment2.html')
-    @@include('./include/relationContent.html')
+    @@include('./include/comment2.html') @@include('./include/relationContent.html')
   </div>
 </div>
-
 
 <div class="modal" id="shareModal" style="display: none;">
   <div class="modal__content">
@@ -81,7 +98,7 @@
     <div class="modal__body">
       <div style="height: 200px;"></div>
     </div>
-    <div class="modal__btnbox ">
+    <div class="modal__btnbox">
       <a href="" class="modal__btn modal__btn--yellow js-modal-close" style="width: 180px;">공유</a>
     </div>
   </div>

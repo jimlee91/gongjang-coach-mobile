@@ -4,7 +4,7 @@ form {
 
 .form__help {
   font-size: 10px;
-  color:$red;
+  color: $red;
 }
 .form {
   &.form--border {
@@ -68,9 +68,9 @@ form {
   &.column {
     display: flex;
     .form__title {
-      width: 70px;
+      width: 85px;
       flex: none;
-      line-height: 30px;
+      line-height: 32px;
     }
     .box {
       flex: 1;
@@ -128,7 +128,7 @@ form {
     font-size: 10px;
     margin-top: 13px;
     padding: 0 10px;
-    background: url("../images/header-search.png") no-repeat calc(100% - 10px) center;
+    background: url('../images/header-search.png') no-repeat calc(100% - 10px) center;
     background-size: auto 12px;
 
     span {
@@ -142,7 +142,7 @@ form {
     position: absolute;
     right: 0;
     top: 0;
-    background: url("../images/header-search.png") no-repeat center;
+    background: url('../images/header-search.png') no-repeat center;
     background-size: auto 12px;
   }
   input {
@@ -153,8 +153,9 @@ form {
     border-bottom: 1px solid rgba(100, 100, 100, 0.5);
     font-size: 10px;
     margin-top: 5px;
+    background: none;
     &.is_confirm {
-      background: url("../images/is_confirm.png") no-repeat right center;
+      background: url('../images/is_confirm.png') no-repeat right center;
     }
     &[readonly] {
       border: none;
@@ -173,7 +174,6 @@ form {
           height: 24px;
           line-height: 22px;
           margin-top: 0;
-
         }
       }
     }
@@ -201,7 +201,7 @@ form {
     font-size: 10px;
     padding: 0 10px;
     margin-top: 13px;
-    background: url("../images/select-arrow.png") no-repeat calc(100% - 10px) center;
+    background: url('../images/select-arrow.png') no-repeat calc(100% - 10px) center;
   }
 }
 
@@ -221,7 +221,7 @@ form {
       //width: 14px;
       //height: 16px;
       &:after {
-        content: "";
+        content: '';
         width: 7px;
         height: 12px;
         display: block;
@@ -301,7 +301,7 @@ form {
   width: 100%;
   height: 100%;
   background: #fff;
-  content: "";
+  content: '';
   transition: all 0.2s ease-out;
 }
 .switch input + span:after {
@@ -311,7 +311,7 @@ form {
   width: 20px;
   height: 20px;
   background: #5a5553;
-  content: "";
+  content: '';
   display: block;
   border-radius: 50%;
   transition: all 0.2s ease-out;
@@ -344,7 +344,7 @@ form {
       &.label {
         padding-left: 10px;
         &:after {
-          content: "";
+          content: '';
           display: block;
           width: 2px;
           background: $red;
@@ -399,7 +399,7 @@ form {
       @include text-indent;
       width: 15px;
       height: 15px;
-      background: url("../images/i-x.png") no-repeat center;
+      background: url('../images/i-x.png') no-repeat center;
       background-size: auto 10px;
       margin-left: 5px;
     }
@@ -423,7 +423,6 @@ form {
     color: #fff;
   }
 }
-
 
 .stdt-info {
   display: flex;
@@ -449,9 +448,9 @@ form {
 .i-list {
   height: 70px;
   overflow: auto;
-  border-top: 1px solid rgba(100,100,100,.5);
-  border-bottom: 1px solid rgba(100,100,100,.5);
-  padding:5px 0;
+  border-top: 1px solid rgba(100, 100, 100, 0.5);
+  border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+  padding: 5px 0;
   li {
     line-height: 20px;
     font-size: 10px;

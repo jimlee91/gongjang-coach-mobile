@@ -8,6 +8,20 @@
     background: #fff;
     padding-top: 20px;
   }
+
+  .white-btn {
+    &:active,
+    &:hover {
+      background: $base;
+      color: #fff;
+    }
+  }
+  .submit-btn {
+    &:active,
+    &:hover {
+      background: $yello !important;
+    }
+  }
 }
 
 .submit-btn {
@@ -20,7 +34,7 @@
   @apply text-center;
   background: #ffb100;
   transition: all 0.3s;
-  font-weight: 600;
+  font-weight: 500;
   &:hover {
     background: #ff3b00;
   }
@@ -37,7 +51,7 @@
 .white-btn {
   width: 185px;
   height: 36px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 36px;
   border-radius: 2em;
   color: #5a5553;
@@ -54,6 +68,14 @@
   &.small {
     width: 100px;
     border-radius: 7px;
+  }
+
+  .to-gray {
+    &:active,
+    &:hover {
+      background: $base;
+      color: #fff;
+    }
   }
 }
 
@@ -76,7 +98,7 @@
   }
 
   &.white {
-    color:#fff;
-    border-color:#fff;
+    color: #fff;
+    border-color: #fff;
   }
 }
