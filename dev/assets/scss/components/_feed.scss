@@ -201,4 +201,24 @@
       }
     }
   }
+  .food__foot {
+    padding:0 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;;
+    .date {
+      font-size: 10px;
+    }
+  }
+}
+
+
+.feed-more {
+  margin-right:-10px;
+  width: 25px;
+  height: 25px;
+  @apply truncate;
+  transform: rotate(90deg);
 }

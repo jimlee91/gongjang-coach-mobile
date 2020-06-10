@@ -96,7 +96,20 @@
   <div class="modal__content">
     <h2 class="modal__title">어디로 공유할까요?</h2>
     <div class="modal__body">
-      <div style="height: 200px;"></div>
+      <div class="sharewrap">
+        <button>
+          <img src="./assets/images/share-kakao.png" alt="" />
+          <span>카카오톡</span>
+        </button>
+        <button>
+          <img src="./assets/images/share-insta.png" alt="" />
+          <span>인스타그램</span>
+        </button>
+      </div>
+      <div class="share-url">
+        <input type="text" readonly value="https://confident-kepler-4a5a7c.netlify.app/34" />
+        <button>URL 복사</button>
+      </div>
     </div>
     <div class="modal__btnbox">
       <a href="" class="modal__btn modal__btn--yellow js-modal-close" style="width: 180px;">공유</a>

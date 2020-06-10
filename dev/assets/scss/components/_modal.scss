@@ -261,3 +261,51 @@
 #preview .modal__content {
   width: 660px;
 }
+
+
+
+.sharewrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+
+  button {
+    width: 45px;
+    flex: none;
+    margin-right: 20px;
+    text-align: center;
+
+    span {
+      font-size: 10px;
+      color: #5a5553;
+      margin-top: 10px;
+      display: block;
+      white-space: nowrap;
+    }
+  }
+}
+.share-url {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+  input {
+    flex: 1;
+    height: 32px;
+    border: solid 1px #d9d9d9;
+    background-color: rgba(234, 234, 234, 0.7);
+    font-size: 10px;
+    color: #337ef7;
+    padding: 0 10px;
+  }
+  button {
+    width: 85px;
+    flex: none;
+    border: 1px solid #d9d9d9;
+    border-left: 0;
+    background: #fff;
+    font-size: 10px;
+    height: 32px;
+  }
+}
