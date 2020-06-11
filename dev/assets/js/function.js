@@ -32,7 +32,7 @@ $(document).ready(function () {
   });
 
   $('.global__button').on('click', function(){
-    $('.global__nav').toggle();
+    $('.global__nav').toggleClass('active');
     $(this).toggleClass('active');
   })
 });
