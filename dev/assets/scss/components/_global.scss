@@ -22,6 +22,7 @@
       .global__nav-content {
         opacity: 1;
         bottom: 65px;
+        // bottom: -288px;
         visibility: visible;
       }
       .global__nav-bg {
@@ -33,8 +34,9 @@
   .global__nav-content {
     position: absolute;
     left: 0;
-    opacity: 0;;
-    bottom: 40px;
+    // opacity: 0;;
+    // bottom: 40px;
+    bottom: -288px;
     width: 100%;
     z-index: 3000;
     border-top-left-radius: 10px;
