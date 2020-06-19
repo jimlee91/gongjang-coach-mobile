@@ -62,20 +62,20 @@
         }
       }
       .feed__views {
-        background: url("../images/i-views-white.png") no-repeat left center;
+        background: url('../images/i-views-white.png') no-repeat left center;
         background-size: auto 10px;
         color: #fff;
         padding-left: 16px;
       }
       .feed__likes {
-        background: url("../images/i-likes-white.png") no-repeat left center;
+        background: url('../images/i-likes-white.png') no-repeat left center;
         background-size: auto 11px;
         color: #fff;
         padding-left: 18px;
         margin-left: 2px;
       }
       .feed__talks {
-        background: url("../images/i-talks-white.png") no-repeat left center;
+        background: url('../images/i-talks-white.png') no-repeat left center;
         background-size: auto 11px;
         color: #fff;
         padding-left: 16px;
@@ -101,35 +101,35 @@
           color: $yello;
         }
         &.feed__action-like {
-          background: url("../images/detail-like.png") no-repeat center top;
+          background: url('../images/detail-like.png') no-repeat center top;
           background-size: auto 18px;
           &.active {
-            background: url("../images/detail-like-active.png") no-repeat center top;
+            background: url('../images/detail-like-active.png') no-repeat center top;
             background-size: auto 18px;
           }
         }
         &.feed__action-unlike {
-          background: url("../images/detail-unlike.png") no-repeat center top;
+          background: url('../images/detail-unlike.png') no-repeat center top;
           background-size: auto 20px;
           &.active {
-            background: url("../images/detail-unlike-active.png") no-repeat center top;
+            background: url('../images/detail-unlike-active.png') no-repeat center top;
             background-size: auto 18px;
           }
         }
         &.feed__action-share {
-          background: url("../images/detail-share.png") no-repeat center top;
+          background: url('../images/detail-share.png') no-repeat center top;
           background-size: auto 18px;
           &:hover {
-            background: url("../images/detail-share-active.png") no-repeat center top;
+            background: url('../images/detail-share-active.png') no-repeat center top;
             background-size: auto 18px;
             color: $yello;
           }
         }
         &.feed__action-report {
-          background: url("../images/detail-report.png") no-repeat center top;
+          background: url('../images/detail-report.png') no-repeat center top;
           background-size: auto 20px;
           &:hover {
-            background: url("../images/detail-report-active.png") no-repeat center top;
+            background: url('../images/detail-report-active.png') no-repeat center top;
             background-size: auto 18px;
             color: $yello;
           }
@@ -166,17 +166,17 @@
       font-size: 10px;
       margin-left: 5px;
       &.view {
-        background: url("../images/i-views.png") no-repeat left center;
+        background: url('../images/i-views.png') no-repeat left center;
         background-size: auto 10px;
         padding-left: 15px;
       }
       &.like {
-        background: url("../images/i-likes.png") no-repeat left center;
+        background: url('../images/i-likes.png') no-repeat left center;
         background-size: auto 10px;
         padding-left: 15px;
       }
       &.talk {
-        background: url("../images/i-talks.png") no-repeat left center;
+        background: url('../images/i-talks.png') no-repeat left center;
         background-size: auto 10px;
         padding-left: 15px;
       }
@@ -188,6 +188,9 @@
   }
 
   .feed__body {
+    img {
+      width: 100%;
+    }
     .imgs {
       overflow: auto;
       @apply flex;
@@ -202,21 +205,20 @@
     }
   }
   .food__foot {
-    padding:0 15px;
+    padding: 0 15px;
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;;
+    justify-content: space-between;
     .date {
       font-size: 10px;
     }
   }
 }
 
-
 .feed-more {
-  margin-right:-10px;
+  margin-right: -10px;
   width: 25px;
   height: 25px;
   @apply truncate;
